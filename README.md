@@ -31,4 +31,8 @@
 ## 📷 Introduction
 **TL;DR:** We propose CamCloneMaster, a framework that enables users to replicate camera movements from reference videos without requiring camera parameters or test-time fine-tuning. CamCloneMaster seamlessly supports reference-based camera control for both I2V and V2V tasks within a unified framework. We also release our [CameraClone Dataset](https://huggingface.co/datasets/KwaiVGI/CameraClone-Dataset) rendered with Unreal Engine 5.
 
-[![Watch The Video](./Figs/DemoFirstFrame.png)](https://www.youtube.com/watch?v=Os18zynOqM4)
+<div align="center">
+
+[![Watch the video](Figs/DemoFirstPageWithButton.png)](https://www.youtube.com/watch?v=Os18zynOqM4)
+
+</div>
