@@ -1,8 +1,8 @@
 <p align="center" >
-    <img src="docs/img/logo.png"  width="60%" >
+    <img src="Figs/CamCloneMaster_Logo.png"  width="75%" >
 </p>
 
-# <div align="center" >CamCloneMaster: Enabling Reference-based Camera Control for Video Generation<div align="center">
+# <div align="center" >Enabling Reference-based Camera Control for Video Generation<div align="center">
 
 ###  <div align="center"> SIGGRAPH Asia 2025 </div>
 <div align="center">
