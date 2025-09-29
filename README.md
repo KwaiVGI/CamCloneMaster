@@ -19,7 +19,7 @@
 
 <br>
 
-<p align="center"> <a href='https://camclonemaster.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;<p align="center"> <a href='https://youtu.be/Os18zynOqM4'><img src='https://img.shields.io/static/v1?label=Youtube&message=Demo Video&color=yellow&logo=youtube'></a> &nbsp;
+<p align="center"> <a href='https://camclonemaster.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;<p align="center"> <a href='https://youtu.be/Os18zynOqM4'><img src='https://img.shields.io/static/v1?label=Youtube&message=DemoVideo&color=yellow&logo=youtube'></a> &nbsp;
 <a href="https://arxiv.org/abs/2506.03140"><img src="https://img.shields.io/static/v1?label=Arxiv&message=CamCloneMaster&color=red&logo=arxiv"></a> &nbsp;<a href='https://huggingface.co/datasets/KwaiVGI/CameraClone-Dataset'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-orange'></a> &nbsp;
 
 </p>
