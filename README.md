@@ -1,5 +1,5 @@
 <p align="center" >
-    <img src="Figs/CamCloneMaster_Logo.png"  width="75%" >
+    <img src="Figs/CamCloneMaster_Logo.png"  width="70%" >
 </p>
 
 # <div align="center" >Enabling Reference-based Camera Control for Video Generation<div align="center">
