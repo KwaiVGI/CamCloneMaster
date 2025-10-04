@@ -127,7 +127,7 @@ CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7" python train_camclone.py --dataset_path C
 ```
 ## 📷 Dataset:
 
-### 1. Dataset Introduction
+#### 1. Dataset Introduction
 
 **TL;DR:** The Camera Clone Dataset, introduced in [CamCloneMaster](https://arxiv.org/pdf/2506.03140), is a large-scale synthetic dataset designed for camera clone learning, encompassing diverse scenes, subjects, and camera movements. It consists of triple video sets: a camera motion reference video \\(V_{cam}\\), a content reference video \\(V_{cont}\\), and a target video \\(V\\), which recaptures the scene in \\(V_{cont}\\) with the same camera movement as \\(V_{cam}\\).
 
@@ -152,7 +152,7 @@ In total, Camera Clone Dataset comprises 391K visually authentic videos shooting
   * **Arc**: Orbital paths, combining a primary rotation (10°-75°) with smaller, secondary rotations (5°-15°).
   * **Random**: Smooth splines interpolated between 2-4 random keypoints. Half of these splines also incorporated with multi-axis rotations.
 
-### 2. Statistics and Configurations
+#### 2. Statistics and Configurations
 
 Dataset Statistics:
 | Number of Dynamic Scenes | Camera per Scene | Total Videos | Number of Triple Sets |
@@ -169,7 +169,7 @@ Video Configurations:
 Note: You can use 'center crop' to adjust the video's aspect ratio to fit your video generation model, such as 16:9, 9:16, 4:3, or 3:4.
 
 
-### 3. File Structure
+#### 3. File Structure
 ```
 Camera-Clone-Dataset
 ├──data
@@ -187,7 +187,7 @@ Camera-Clone-Dataset
     └── 0410
 ```
 
-### 4. Use Dataset
+#### 4. Use Dataset
 ```bash
 sudo apt-get install git-lfs
 git lfs install
