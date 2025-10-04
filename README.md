@@ -77,3 +77,13 @@ python download_wan2.1.py
 ```
 
 2. Download the adapted Wan2.1-I2V-1.3B models
+
+Please download checkpoints from [huggingface](https://huggingface.co/KwaiVGI/CamCloneMaster-Wan2.1) and place it in models/.
+
+```bash
+# Make sure git-lfs is installed (https://git-lfs.com)
+git lfs install
+git clone https://huggingface.co/KwaiVGI/CamCloneMaster-Wan2.1
+```
+
+3. 
