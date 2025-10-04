@@ -64,13 +64,16 @@ curl --proto '=https' --tlsv1.2 -sSf [https://sh.rustup.rs](https://sh.rustup.rs
 
 Install [DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio):
 ```bash
-git clone https://github.com/KwaiVGI/ReCamMaster.git
-cd ReCamMaster
+git clone https://github.com/KwaiVGI/CamCloneMaster
+cd CamCloneMaster
 pip install -e .
 ```
 
 ####  Step 2: Download the pretrained checkpoints
 1. Download the pre-trained Wan2.1 models
-
+```bash
+cd CamCloneMaster
+python download_wan2.1.py
+```
 
 2. Download the adapted Wan2.1-I2V-1.3B models
