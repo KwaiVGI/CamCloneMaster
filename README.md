@@ -29,6 +29,8 @@
   <a href='https://huggingface.co/datasets/KwaiVGI/CameraClone-Dataset'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-orange'></a>
 </p>
 
+**Note:** This open-source repository is intended to provide a reference implementation. Due to the difference in the underlying I2V model's performance, the open-source version may not achieve the same performance as the model in our paper. 
+
 ## 🔥 Updates
 - __[2025.09.25]__: [CamCloneMaster](https://arxiv.org/abs/2506.03140) has been accepted by SIGGRAPH Aisa 2025.
 - __[2025.09.08]__: [CameraClone Dataset](https://huggingface.co/datasets/KwaiVGI/CameraClone-Dataset/) is avaliable.
@@ -42,3 +44,33 @@
 [![Watch the video](Figs/DemoFirstPageWithButton.png)](https://www.youtube.com/watch?v=Os18zynOqM4)
 
 </div>
+
+## ⚙️ Code: CamCloneMaster + Wan2.1 (Inference & Training)
+
+The model utilized in our paper is an internally developed T2V model, not [Wan2.1](https://github.com/Wan-Video/Wan2.1). Due to company policy restrictions, we are unable to open-source the model used in the paper. 
+
+Due to training cost limitations, we adapted the [Wan2.1-T2V-1.3B](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B) model for Image-to-Video (I2V) generation. This was achieved by conditioning the first frame through channel concatenation, a method proposed in the [Wan technical report]((https://arxiv.org/abs/2503.20314)), rather than using the larger [Wan2.1-I2V-14B](https://huggingface.co/Wan-AI/Wan2.1-T2V-14B) model. We then integrated CamCloneMaster with this adapted 1.3B model to validate our method's effectiveness. Please note that results may differ from the demo due to this difference in the underlying I2V model.
+
+### Inference
+
+####  Step 1: Set up the environment
+
+[DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) requires Rust and Cargo to compile extensions. You can install them using the following command:
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf [https://sh.rustup.rs](https://sh.rustup.rs/) | sh
+. "$HOME/.cargo/env"
+```
+
+Install [DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio):
+```bash
+git clone https://github.com/KwaiVGI/ReCamMaster.git
+cd ReCamMaster
+pip install -e .
+```
+
+####  Step 2: Download the pretrained checkpoints
+1. Download the pre-trained Wan2.1 models
+
+
+2. Download the adapted Wan2.1-I2V-1.3B models
