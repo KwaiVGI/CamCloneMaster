@@ -121,15 +121,15 @@ cat CamCloneDataset.part* > CamCloneDataset.tar.gz
 tar -xzvf CamCloneDataset.tar.gz
 ```
 
-#### Step 3:  
+#### Step 3: Training CamCloneMaster 
 ```python
 CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7" python train_camclone.py --dataset_path CameraClone-Dataset/CamCloneDataset.csv/ --output_path models/train
 ```
-## 📷 Dataset:
+## 📷 Dataset: Camera Clone Datasetr
 
 #### 1. Dataset Introduction
 
-**TL;DR:** The Camera Clone Dataset, introduced in [CamCloneMaster](https://arxiv.org/pdf/2506.03140), is a large-scale synthetic dataset designed for camera clone learning, encompassing diverse scenes, subjects, and camera movements. It consists of triple video sets: a camera motion reference video \\(V_{cam}\\), a content reference video \\(V_{cont}\\), and a target video \\(V\\), which recaptures the scene in \\(V_{cont}\\) with the same camera movement as \\(V_{cam}\\).
+**TL;DR:** The Camera Clone Dataset, introduced in [CamCloneMaster](https://arxiv.org/pdf/2506.03140), is a large-scale synthetic dataset designed for camera clone learning, encompassing diverse scenes, subjects, and camera movements. It consists of triple video sets: a camera motion reference video $V_{cam}$, a content reference video $V_{cont}$, and a target video $V$, which recaptures the scene in $V_{cont}$ with the same camera movement as $V_{cam}$.
 
 <div align="center">
   <video controls autoplay style="width: 100%;" src="https://huggingface.co/datasets/KwaiVGI/CameraClone-Dataset/resolve/main/dataset.mp4"></video>
