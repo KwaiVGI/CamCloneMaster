@@ -125,19 +125,19 @@ tar -xzvf CamCloneDataset.tar.gz
 ```python
 CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7" python train_camclone.py --dataset_path CameraClone-Dataset/CamCloneDataset.csv/ --output_path models/train
 ```
-## 📷 Dataset: Camera Clone Datasetr
+## 📷 Dataset: Camera Clone Dataset
 
 #### 1. Dataset Introduction
 
 **TL;DR:** The Camera Clone Dataset, introduced in [CamCloneMaster](https://arxiv.org/pdf/2506.03140), is a large-scale synthetic dataset designed for camera clone learning, encompassing diverse scenes, subjects, and camera movements. It consists of triple video sets: a camera motion reference video $V_{cam}$, a content reference video $V_{cont}$, and a target video $V$, which recaptures the scene in $V_{cont}$ with the same camera movement as $V_{cam}$.
 
 <div align="center">
-  <video controls autoplay style="width: 100%;" src="https://huggingface.co/datasets/KwaiVGI/CameraClone-Dataset/resolve/main/dataset.mp4"></video>
+  <video controls autoplay style="width: 100%;" src="Figs/dataset.mp4"></video>
 </div>
 
 The Camera Clone Dataset is rendered using Unreal Engine 5. We collect 40 3D scenes as backgrounds, and we also collect 66 characters and put them into the 3D scenes as main subjects, each character is combined with one random animation, such as running and dancing.
 
-To construct the triple set, camera trajectories must satisfy two key requirements: 1) *Simultaneous Multi-View Capture*: Multiple cameras must film the same scene concurrently, each following a distinct trajectory. 2) *Paired Trajectories*: paired shots with the same camera trajectories across different locations. Our implementation strategy addresses these needs as follows: Within any single location, 10 synchronized cameras operate simultaneously, each following one of ten unique, pre-defined trajectories to capture diverse views. To create paired trajectories, we group 3D locations in scenes into sets of four, ensuring that the same ten camera trajectories are replicated across all locations within each set. The camera trajectories themselves are automatically generated using designed rules. These rules encompass various types, including basic movements, circular arcs, and more complex camera paths.
+To construct the triple set, camera trajectories must satisfy two key requirements: 1) **Simultaneous Multi-View Capture**: Multiple cameras must film the same scene concurrently, each following a distinct trajectory. 2) **Paired Trajectories**: paired shots with the same camera trajectories across different locations. Our implementation strategy addresses these needs as follows: Within any single location, 10 synchronized cameras operate simultaneously, each following one of ten unique, pre-defined trajectories to capture diverse views. To create paired trajectories, we group 3D locations in scenes into sets of four, ensuring that the same ten camera trajectories are replicated across all locations within each set. The camera trajectories themselves are automatically generated using designed rules. These rules encompass various types, including basic movements, circular arcs, and more complex camera paths.
 
 In total, Camera Clone Dataset comprises 391K visually authentic videos shooting from 39.1K different locations in 40 scenes with 97.75K diverse camera trajectories, and 1,155K triple video sets are constructed based on these videos. Each video has a resolution of 576 x 1,008 and 77 frames.
 
@@ -147,7 +147,7 @@ In total, Camera Clone Dataset comprises 391K visually authentic videos shooting
 
 **Animation:** We collect 93 different animations from [Fab](https://www.fab.com) and [Mixamo](https://www.mixamo.com), including common actions such as waving, dancing, and cheering. We use these animations to drive the collected characters and create diverse datasets through various combinations.
 
-**Camera Trajectories:** To prevent clipping, trajectories are constrained by a maximum movement distance \\(d_{max}\\), determined by the initial shot position in the scene. The types of trajectories contain:
+**Camera Trajectories:** To prevent clipping, trajectories are constrained by a maximum movement distance $d_{max}$, determined by the initial shot position in the scene. The types of trajectories contain:
   * **Basic**: Simple pans/tilts (5°-75°), rolls (20°-340°), and translations along cardinal axes.
   * **Arc**: Orbital paths, combining a primary rotation (10°-75°) with smaller, secondary rotations (5°-15°).
   * **Random**: Smooth splines interpolated between 2-4 random keypoints. Half of these splines also incorporated with multi-axis rotations.
