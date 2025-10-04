@@ -70,13 +70,13 @@ pip install -e .
 ```
 
 ####  Step 2: Download the pretrained checkpoints
-1. Download the pre-trained Wan2.1 models
+1. Download the pre-trained Wan2.1-T2V-1.3B models
 ```bash
 cd CamCloneMaster
 python download_wan2.1.py
 ```
 
-2. Download the adapted Wan2.1-I2V-1.3B models
+2. Download the adapted Wan2.1-I2V-1.3B and CamCloneMaster models
 
 Please download checkpoints from [huggingface](https://huggingface.co/KwaiVGI/CamCloneMaster-Wan2.1) and place it in models/.
 
@@ -86,4 +86,22 @@ git lfs install
 git clone https://huggingface.co/KwaiVGI/CamCloneMaster-Wan2.1
 ```
 
-3. 
+#### Step 3: Test Adapted Wan-1.3B-I2V & CamCloneMaster on example videos
+
+1. Test Image-to-Video Generation with Adapted Wan-1.3B-I2V Checkpoints
+
+```python
+cd CamCloneMaster
+python inference_i2v.py --dataset_path demo/example_csv/infer/example_i2v_testset.csv --ckpt_path models/CamCloneMaster-Wan2.1/Wan-I2V-1.3B-Step8000.ckpt --output_dir demo/i2v_output
+```
+
+2. Test Camera Controlled Image-to-Video Generation with CamCloneMaster Checkpoints
+```python
+cd CamCloneMaster
+python inference_camclone.py --cameraclone_type i2v --dataset_path demo/example_csv/infer/example_camclone_testset.csv --ckpt_path models/CamCloneMaster-Wan2.1/CamCloneMaster-Step9500.ckpt --output_dir demo/camclone_i2v_output
+```
+3. Test Camera Controlled Video-to-Video Re-Generation with CamCloneMaster Checkpoints
+```python
+cd CamCloneMaster
+python inference_camclone.py --cameraclone_type v2v --dataset_path demo/example_csv/infer/example_camclone_testset.csv --ckpt_path models/CamCloneMaster-Wan2.1/CamCloneMaster-Step9500.ckpt --output_dir demo/camclone_v2v_output
+```
