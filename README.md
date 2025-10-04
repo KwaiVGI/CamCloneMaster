@@ -201,3 +201,17 @@ The "Triple Sets" information is located in the [CamCloneDataset.csv](https://hu
 * caption: A description of the target video.
 * ref_video_path: The path to the camera reference video.
 * content_video_path: The path to the content reference video.
+
+## 🌟 Citation
+Please leave us a star 🌟 and cite our paper if you find our work helpful.
+```txt
+@misc{luo2025camclonemaster,
+      title={CamCloneMaster: Enabling Reference-based Camera Control for Video Generation}, 
+      author={Yawen Luo and Jianhong Bai and Xiaoyu Shi and Menghan Xia and Xintao Wang and Pengfei Wan and Di Zhang and Kun Gai and Tianfan Xue},
+      year={2025},
+      eprint={2506.03140},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2506.03140}, 
+}
+```
