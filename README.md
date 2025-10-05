@@ -157,7 +157,7 @@ CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7" python train_camclone.py --dataset_path C
   <video controls autoplay style="width: 100%;" src="Figs/dataset.mp4"></video>
 </div> -->
 
-https://github.com/KwaiVGI/CamCloneMaster/blob/main/Figs/dataset.mp4
+https://github.com/user-attachments/assets/8623b6e1-e919-46dd-ab0b-d889a72210b8
 
 The Camera Clone Dataset is rendered using Unreal Engine 5. We collect 40 3D scenes as backgrounds, and we also collect 66 characters and put them into the 3D scenes as main subjects, each character is combined with one random animation, such as running and dancing.
 
