@@ -153,9 +153,11 @@ CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7" python train_camclone.py --dataset_path C
 
 **TL;DR:** The Camera Clone Dataset, introduced in [CamCloneMaster](https://arxiv.org/pdf/2506.03140), is a large-scale synthetic dataset designed for camera clone learning, encompassing diverse scenes, subjects, and camera movements. It consists of triple video sets: a camera motion reference video $V_{cam}$, a content reference video $V_{cont}$, and a target video $V$, which recaptures the scene in $V_{cont}$ with the same camera movement as $V_{cam}$.
 
-<div align="center">
+<!-- <div align="center">
   <video controls autoplay style="width: 100%;" src="Figs/dataset.mp4"></video>
-</div>
+</div> -->
+
+https://github.com/KwaiVGI/CamCloneMaster/blob/main/Figs/dataset.mp4
 
 The Camera Clone Dataset is rendered using Unreal Engine 5. We collect 40 3D scenes as backgrounds, and we also collect 66 characters and put them into the 3D scenes as main subjects, each character is combined with one random animation, such as running and dancing.
 
