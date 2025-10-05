@@ -103,6 +103,28 @@ python inference_camclone.py --cameraclone_type i2v --dataset_path demo/example_
 python inference_camclone.py --cameraclone_type v2v --dataset_path demo/example_csv/infer/example_camclone_testset.csv --ckpt_path models/CamCloneMaster-Wan2.1/CamCloneMaster-Step9500.ckpt --output_dir demo/camclone_v2v_output
 ```
 
+#### Step 4: Test your own videos
+
+To test your own videos, structure your test data according to the `demo/example_csv/infer/example_camclone_testset.csv` file. The required data will vary based on the generation mode:
+
+*   **For Camera Controlled Image-to-Video Generation, you will need to provide:**
+    *   `ref_video_path`: The reference video for camera motion.
+    *   `first_frame_path`: The initial frame of the target video.
+    *   `caption`: A description of the target video.
+
+*   **For Camera Controlled Video-to-Video Re-generation, you will need to provide:**
+    *   `ref_video_path`: The reference video for camera motion.
+    *   `content_video_path`: The reference video for the content.
+    *   `caption`: A description of the target video.
+    *   The `first_frame_path` is not needed, as the system defaults to using the first frame of the content reference video.
+
+**Note:** If your camera reference video is not at a 480x832 resolution, it will be automatically resized and cropped. Because camera motion is highly dependent on resolution, this can affect comparisons. For details on the resizing process, please refer to the [CamCloneDataset](https://vscode.dev/github/KwaiVGI/CamCloneMaster/blob/main/inference_camclone.py#L111) class.
+
+To accurately compare the camera motion of the generated video with your reference video, you have two options:
+
+1.  **Pre-process the reference video:** Before inference, use the `resize_and_crop_videos.py` script to resize your camera motion reference video to 480x832.
+2.  **Use the visualization script:** The `vis_camclone_results` script will automatically sample, resize, and crop your reference video—in the same way as the `CamCloneDataset` class—when it concatenates the reference and target videos for comparison.
+
 ### Training
 
 #### Step 1: Set up the environment
