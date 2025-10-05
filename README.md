@@ -118,12 +118,12 @@ To test your own videos, structure your test data according to the `demo/example
     *   `caption`: A description of the target video.
     *   The `first_frame_path` is not needed, as the system defaults to using the first frame of the content reference video.
 
-**Note:** If your camera reference video is not at a 480x832 resolution, it will be automatically resized and cropped. Because camera motion is highly dependent on resolution, this can affect comparisons. For details on the resizing process, please refer to the [CamCloneDataset](https://vscode.dev/github/KwaiVGI/CamCloneMaster/blob/main/inference_camclone.py#L111) class.
+**Note:** If your camera reference video is not at a 480x832 resolution, it will be automatically resized and cropped. Because camera motion is highly dependent on resolution, this can affect comparisons. For details on the resizing process, please refer to the [`CamCloneDataset`](https://github.com/KwaiVGI/CamCloneMaster/blob/1f805fa15edadab72469d26e7dc12a9cc862f132/inference_camclone.py#L108) class.
 
 To accurately compare the camera motion of the generated video with your reference video, you have two options:
 
-1.  **Pre-process the reference video:** Before inference, use the `resize_and_crop_videos.py` script to resize your camera motion reference video to 480x832.
-2.  **Use the visualization script:** The `vis_camclone_results` script will automatically sample, resize, and crop your reference video—in the same way as the `CamCloneDataset` class—when it concatenates the reference and target videos for comparison.
+1.  **Pre-process the reference video:** Before inference, use the [`resize_and_crop_videos.py`](https://github.com/KwaiVGI/CamCloneMaster/blob/1f805fa15edadab72469d26e7dc12a9cc862f132/resize_and_crop_videos.py#L9) script to resize your camera motion reference video to 480x832.
+2.  **Use the visualization script:** The [`vis_camclone_results.py`](https://github.com/KwaiVGI/CamCloneMaster/blob/1f805fa15edadab72469d26e7dc12a9cc862f132/vis_camclone_results.py#L8) script will automatically sample, resize, and crop your reference video—in the same way as the [`CamCloneDataset`](https://github.com/KwaiVGI/CamCloneMaster/blob/1f805fa15edadab72469d26e7dc12a9cc862f132/inference_camclone.py#L108) class—when it concatenates the reference and target videos for comparison.
 
 ### Training
 
