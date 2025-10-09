@@ -32,6 +32,7 @@
 **Note:** This open-source repository is intended to provide a reference implementation. Due to the difference in the underlying I2V model's performance, the open-source version may not achieve the same performance as the model in our paper. 
 
 ## 🔥 Updates
+- __[2025.10.09]__: Training and Inference Code, [Model Checkpoints](https://huggingface.co/KwaiVGI/CamCloneMaster-Wan2.1) are available.
 - __[2025.09.25]__: [CamCloneMaster](https://arxiv.org/abs/2506.03140) has been accepted by SIGGRAPH Aisa 2025.
 - __[2025.09.08]__: [CameraClone Dataset](https://huggingface.co/datasets/KwaiVGI/CameraClone-Dataset/) is avaliable.
 - __[2025.06.03]__: Release the [Project Page](https://camclonemaster.github.io/) and the [Arxiv](https://arxiv.org/abs/2506.03140) version.
