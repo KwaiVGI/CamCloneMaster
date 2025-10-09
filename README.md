@@ -50,7 +50,7 @@
 
 <div align="center">
 
-[![Watch the video](Figs/DemoFirstPageWithButton.png)](https://www.youtube.com/watch?v=Os18zynOqM4)
+[![Watch the video](Figs/DemoFirstPageWithButton.png)](https://www.youtube.com/watch?v=eVPI2oTTd98)
 
 </div>
 
