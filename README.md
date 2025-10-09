@@ -6,15 +6,23 @@
 
 ###  <div align="center"> SIGGRAPH Asia 2025 </div>
 <div align="center">
-  <a href="https://luo0207.github.io/yawenluo/">Yawen Luo</a>, 
-  <a href="https://jianhongbai.github.io/">Jianhong Bai</a>, 
-  <a href="https://xiaoyushi97.github.io/">Xiaoyu Shi</a><sup>†</sup>, 
-  <a href="https://menghanxia.github.io/">Menghan Xia</a>, 
-  <a href="https://xinntao.github.io/">Xintao Wang</a>, 
-  <a href="https://magicwpf.github.io/">Pengfei Wan</a>, 
-  <a href="https://openreview.net/profile?id=~Di_ZHANG3">Di Zhang</a>,
-  <a href="https://openreview.net/profile?id=~Kun_Gai1">Kun Gai</a>,
-  <a href="https://tianfan.info/">Tianfan Xue</a><sup>†</sup>
+  <p>
+    <a href="https://luo0207.github.io/yawenluo/">Yawen Luo</a><sup>1</sup>
+    <a href="https://jianhongbai.github.io/">Jianhong Bai</a><sup>2</sup>
+    <a href="https://xiaoyushi97.github.io/">Xiaoyu Shi</a><sup>3✉</sup>
+    <a href="https://menghanxia.github.io/">Menghan Xia</a><sup>3</sup>
+    <a href="https://xinntao.github.io/">Xintao Wang</a><sup>3</sup>
+    <a href="https://magicwpf.github.io/">Pengfei Wan</a><sup>3</sup><br>
+    <a href="https://openreview.net/profile?id=~Di_ZHANG3">Di Zhang</a><sup>3</sup>
+    <a href="https://openreview.net/profile?id=~Kun_Gai1">Kun Gai</a><sup>3</sup>
+    <a href="https://tianfan.info/">Tianfan Xue</a><sup>1✉</sup>
+  </p>
+  <p>
+    <sup>1</sup>The Chinese University of Hong Kong &nbsp;&nbsp;
+    <sup>2</sup>Zhejiang University<br>
+    <sup>3</sup>Kuaishou Technology &nbsp;&nbsp;
+    <sup>✉</sup>Corresponding author
+  </p>
 </div>
 
 <br>
