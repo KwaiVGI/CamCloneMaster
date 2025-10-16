@@ -225,8 +225,9 @@ Camera-Clone-Dataset
 sudo apt-get install git-lfs
 git lfs install
 git clone https://huggingface.co/datasets/KwaiVGI/CameraClone-Dataset
+cd CameraClone-Dataset
 cat CamCloneDataset.part* > CamCloneDataset.tar.gz
-tar -xzvf CamCloneDataset.tar.gz
+tar --zstd -xvf CamCloneDataset.tar.gz
 ```
 
 The "Triple Sets" information is located in the [CamCloneDataset.csv](https://huggingface.co/datasets/KwaiVGI/CameraClone-Dataset/blob/main/CamCloneDataset.csv) file, which contains the following columns:
