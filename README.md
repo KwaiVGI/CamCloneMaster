@@ -149,7 +149,7 @@ sudo apt-get install git-lfs
 git lfs install
 git clone https://huggingface.co/datasets/KwaiVGI/CameraClone-Dataset
 cat CamCloneDataset.part* > CamCloneDataset.tar.gz
-tar -xzvf CamCloneDataset.tar.gz
+tar --zstd -xvf CamCloneDataset.tar.gz
 ```
 
 #### Step 3: Training CamCloneMaster 
